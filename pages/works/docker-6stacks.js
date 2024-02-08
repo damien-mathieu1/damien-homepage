@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta } from '../../components/work'
+import { Title, Meta, WorkImage } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
@@ -37,6 +37,12 @@ const Work = () => (
           </Link>
         </ListItem>
       </List>
+
+      <WorkImage src="/images/works/6stack01.png" alt="grafana" />
+      <WorkImage src="/images/works/6stack02.png" alt="traefik" />
+      <WorkImage src="/images/works/6stack03.png" alt="ghost" />
+      <WorkImage src="/images/works/6stack04.png" alt="gitea" />
+      <WorkImage src="/images/works/6stack05.png" alt="keycloak" />
     </Container>
   </Layout>
 )

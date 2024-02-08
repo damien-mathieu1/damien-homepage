@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta } from '../../components/work'
+import { Title, Meta, WorkImage } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
@@ -37,6 +37,7 @@ const Work = () => (
           </Link>
         </ListItem>
       </List>
+      <WorkImage src="/images/works/keycloak01.png" alt="keycloak" />
     </Container>
   </Layout>
 )

@@ -14,7 +14,7 @@ const Work = () => (
   <Layout title="anaba">
     <Container>
       <Title>
-        anaba pour LinkedIn <Badge>2023-</Badge>
+        anaba pour LinkedIn <Badge>2023</Badge>
       </Title>
       <P>
         A Chrome Extension made for LinkedIn available in the chrome store. This extension is used to automate contact from LinkedIn to anaba solution. I made this extension as a mission during my internship and it is probably going to be improved in the future based on the clients&apos; feedbacks.
