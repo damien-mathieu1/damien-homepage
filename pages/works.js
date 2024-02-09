@@ -9,6 +9,7 @@ import thumbDocker6Stacks from '../public/images/works/6stack_eyecatch.png'
 import thumbAnaba from '../public/images/works/anaba_eyecatch.png'
 import thumbEportfolio from '../public/images/works/eportfolio_eyecatch.png'
 import thumbRickypedia from '../public/images/works/rickypedia_eyecatch.png'
+import thumbAnsiblePlaybookRunner from '../public/images/works/ansible_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -20,7 +21,8 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="anaba" title="anaba" thumbnail={thumbAnaba}>
-            A Chrome Extension made for LinkedIn which automate contact creation in anaba
+            A Chrome Extension made for LinkedIn which automate contact creation
+            in anaba
           </WorkGridItem>
         </Section>
         <Section>
@@ -39,7 +41,8 @@ const Works = () => (
             title="Rickypedia"
             thumbnail={thumbRickypedia}
           >
-            A website that uses Rick & Morty API to display characters and episodes
+            A website that uses Rick & Morty API to display characters and
+            episodes
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -54,12 +57,20 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
-          <WorkGridItem id="fakex" thumbnail={thumbFakex} title="fakex">
-            Sneaker marketplace mimicking StockX 
+          <WorkGridItem
+            id="ansible-playbook-runner"
+            title="Ansible Playbook Runner"
+            thumbnail={thumbAnsiblePlaybookRunner}
+          >
+            A tool to run ansible playbooks on servers
           </WorkGridItem>
         </Section>
         <Section delay={0.5}>
-          <WorkGridItem id="docker-6stacks" thumbnail={thumbDocker6Stacks} title="Docker 6 stacks">
+          <WorkGridItem
+            id="docker-6stacks"
+            thumbnail={thumbDocker6Stacks}
+            title="Docker 6 stacks"
+          >
             Docker compose with 6 stacks
           </WorkGridItem>
         </Section>
@@ -72,7 +83,11 @@ const Works = () => (
             Keycloak with Docker and LDAP
           </WorkGridItem>
         </Section>
-        
+        <Section delay={0.6}>
+          <WorkGridItem id="fakex" thumbnail={thumbFakex} title="fakex">
+            Sneaker marketplace mimicking StockX
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
     </Container>
   </Layout>
