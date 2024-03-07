@@ -1,10 +1,4 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem
-} from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta, WorkImage } from '../../components/work'
 import P from '../../components/paragraph'
@@ -17,7 +11,9 @@ const Work = () => (
         Rickypedia <Badge>2023</Badge>
       </Title>
       <P>
-        A website that uses Rick & Morty API to display characters and episodes. This project was made to learn React with GraphQL and Apollo Client. It is hosted on Vercel and the source code is available on GitHub.
+        A website that uses Rick & Morty API to display characters and episodes.
+        This project was made to learn React with GraphQL and Apollo Client. It
+        is hosted on Vercel and the source code is available on GitHub.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -25,6 +21,10 @@ const Work = () => (
           <Link href="https://rickypedia.vercel.app/">
             https://rickypedia.vercel.app/ <ExternalLinkIcon mx="2px" />
           </Link>
+        </ListItem>
+        <ListItem>
+          <Meta>Platform</Meta>
+          <span>Windows/macOS/Linux</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>

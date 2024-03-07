@@ -10,6 +10,7 @@ import thumbAnaba from '../public/images/works/anaba_eyecatch.png'
 import thumbEportfolio from '../public/images/works/eportfolio_eyecatch.png'
 import thumbRickypedia from '../public/images/works/rickypedia_eyecatch.png'
 import thumbAnsiblePlaybookRunner from '../public/images/works/ansible_eyecatch.png'
+import thumbGitlabCicd from '../public/images/works/gitlab_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -19,12 +20,6 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
-          <WorkGridItem id="anaba" title="anaba" thumbnail={thumbAnaba}>
-            A Chrome Extension made for LinkedIn which automate contact creation
-            in anaba
-          </WorkGridItem>
-        </Section>
         <Section>
           <WorkGridItem
             id="ePortfolio"
@@ -51,12 +46,38 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          School works
+          Professional works
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
+          <WorkGridItem id="anaba" title="anaba" thumbnail={thumbAnaba}>
+            A Chrome Extension made for LinkedIn which automate contact creation
+            in anaba
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.5}>
+          <WorkGridItem
+            id="gitlab-cicd"
+            thumbnail={thumbGitlabCicd}
+            title="Gitlab CI/CD"
+          >
+            Gitlab CI/CD, pipeline optimization
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+
+      <Section delay={0.4}>
+        <Divider my={6} />
+
+        <Heading as="h3" fontSize={20} mb={4}>
+          School works
+        </Heading>
+      </Section>
+
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.8}>
           <WorkGridItem
             id="ansible-playbook-runner"
             title="Ansible Playbook Runner"
@@ -65,7 +86,7 @@ const Works = () => (
             A tool to run ansible playbooks on servers
           </WorkGridItem>
         </Section>
-        <Section delay={0.5}>
+        <Section delay={0.8}>
           <WorkGridItem
             id="docker-6stacks"
             thumbnail={thumbDocker6Stacks}
@@ -74,7 +95,7 @@ const Works = () => (
             Docker compose with 6 stacks
           </WorkGridItem>
         </Section>
-        <Section delay={0.6}>
+        <Section delay={1}>
           <WorkGridItem
             id="keycloak-docker-ldap"
             thumbnail={thumbKeycloakDockerLdap}
@@ -83,7 +104,7 @@ const Works = () => (
             Keycloak with Docker and LDAP
           </WorkGridItem>
         </Section>
-        <Section delay={0.6}>
+        <Section delay={1}>
           <WorkGridItem id="fakex" thumbnail={thumbFakex} title="fakex">
             Sneaker marketplace mimicking StockX
           </WorkGridItem>
