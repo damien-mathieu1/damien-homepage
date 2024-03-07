@@ -1,4 +1,4 @@
-import { Box, Link } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 const Footer = () => {
   // Thanks to{' '} <Link href="https://www.craftz.dog/">Takuyama Matsuyama</Link>
