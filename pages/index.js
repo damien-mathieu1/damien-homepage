@@ -14,7 +14,12 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoGithub, IoLogoGoogle, IoLogoLinkedin } from 'react-icons/io5'
+import {
+  IoLogoGithub,
+  IoLogoGoogle,
+  IoLogoLinkedin,
+  IoAccessibility
+} from 'react-icons/io5'
 import Image from 'next/image'
 
 const Home = () => (
@@ -69,8 +74,13 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          I am a computer science student and a full-stack developer working in internship at <Link href="https://www.anaba.fr/">anaba</Link>, a startup based in Montpellier. I have a
-          real interest for new technologies, web development and deployment. I have been studying computer science for the last 3 years and I am aiming to continue my studies and get an engineering degree. I am fond of music and old piece of technology such as old camera and old radio.
+          I am a computer science student and a full-stack developer working in
+          internship at <Link href="https://www.anaba.fr/">anaba</Link>, a
+          startup based in Montpellier. I have a real interest for new
+          technologies, web development and deployment. I have been studying
+          computer science for the last 3 years and I am aiming to continue my
+          studies and get an engineering degree. I am fond of music and old
+          piece of technology such as old camera and old radio.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -95,7 +105,10 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2021 to Present</BioYear>
-          Studying computer science at <Link href="https://iut-montpellier-sete.edu.umontpellier.fr/en/iut-de-montpellier-sete-english/">IUT of Montpellier</Link>
+          Studying computer science at{' '}
+          <Link href="https://iut-montpellier-sete.edu.umontpellier.fr/en/iut-de-montpellier-sete-english/">
+            IUT of Montpellier
+          </Link>
         </BioSection>
         <BioSection>
           <BioYear>2023 to Present</BioYear>
@@ -140,7 +153,10 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.linkedin.com/in/damien-mathieu-a70348241/" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/damien-mathieu-a70348241/"
+              target="_blank"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -150,8 +166,21 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
+          <ListItem>
+            <Link
+              href="https://drive.google.com/file/d/1Lvdsb8Bjr08pjvAc56CGbbiw8EzADoDj/view?usp=sharing"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoAccessibility />}
+              >
+                My resume
+              </Button>
+            </Link>
+          </ListItem>
         </List>
-
       </Section>
     </Container>
   </Layout>
