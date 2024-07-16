@@ -18,7 +18,7 @@ I am a passionate developer with expertise in web development. I love building i
 
 If you have any questions or would like to collaborate on a project, feel free to reach out to me:
 
-- Email: [Your email address]
-- LinkedIn: [Your LinkedIn profile URL]
+- Email: damien.trot34@gmail.com
+- LinkedIn: https://www.linkedin.com/in/damien-mathieu1
 
 Thank you for visiting my portfolio!
